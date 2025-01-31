@@ -7,9 +7,7 @@ mod tests {
         // Macro input generated with scripts/gen_fp.sage
         // p = 2^74 * 3^41 - 1
         fp2_rs::define_fp_core!(
-            type_name = Fp139,
-            words = 3_usize,
-            bit_len = 139_usize,
+            typename = Fp139,
             modulus = [0xFFFFFFFFFFFFFFFF, 0xA873D9ED7EE18BFF, 0x00000000000007E8],
             half_modulus = [0x0000000000000000, 0x5439ECF6BF70C600, 0x00000000000003F4],
             mont_r = [0x00205E71C12F4F15, 0x0C05B368494B8400, 0x00000000000006C0],
@@ -34,7 +32,7 @@ mod tests {
         // Contents are opaque, all functions are constant-time.
         // Macro input generated with scripts/gen_fp.sage
         fp2_rs::define_fp2_core!(
-            type_name = Fp139Ext,
+            typename = Fp139Ext,
             base_field = Fp139,
             nqr_re = [0x0143B0718BD916DA, 0x349A32A6E5E6C800, 0x000000000000043B]
         );
@@ -50,9 +48,7 @@ mod tests {
         // Macro input generated with scripts/gen_fp.sage
         // p = 5*2^248 - 1
         fp2_rs::define_fp_core!(
-            type_name = Fp251,
-            words = 4_usize,
-            bit_len = 251_usize,
+            typename = Fp251,
             modulus = [
                 0xFFFFFFFFFFFFFFFF,
                 0xFFFFFFFFFFFFFFFF,
@@ -127,7 +123,7 @@ mod tests {
         // Contents are opaque, all functions are constant-time.
         // Macro input generated with scripts/gen_fp.sage
         fp2_rs::define_fp2_core!(
-            type_name = Fp251Ext,
+            typename = Fp251Ext,
             base_field = Fp251,
             nqr_re = [
                 0x0000000000000100,
@@ -146,9 +142,7 @@ mod tests {
         // Contents are opaque, all functions are constant-time.
         // Macro input generated with scripts/gen_fp.sage
         fp2_rs::define_fp_core!(
-            type_name = Fp383,
-            words = 6_usize,
-            bit_len = 383_usize,
+            typename = Fp383,
             modulus = [
                 0xFFFFFFFFFFFFFFFF,
                 0xFFFFFFFFFFFFFFFF,
@@ -243,7 +237,7 @@ mod tests {
         // Contents are opaque, all functions are constant-time.
         // Macro input generated with scripts/gen_fp.sage
         fp2_rs::define_fp2_core!(
-            type_name = Fp383Ext,
+            typename = Fp383Ext,
             base_field = Fp383,
             nqr_re = [
                 0x0000000000000017,
